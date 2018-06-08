@@ -2,7 +2,7 @@
 * @Author: SisSoftwares WEB (Sistemas PHP)
 * @Date:   2018-06-07 13:12:35
 * @Last Modified by:   Usuario
-* @Last Modified time: 2018-06-08 05:56:20
+* @Last Modified time: 2018-06-08 06:27:55
 */
 
 /*menu handler*/
@@ -13,7 +13,7 @@ $(function(){
   }
 
   var url = window.location +''; // Add "+''" to get location like string
-  var urlClass = getSecondPart(url, '?', 1);
+  var urlClass = getPart(url, '?', 1);
   $('li a[href="'+ 'index.php?' + urlClass +'"]').closest('ul').closest('li').toggleClass('active');
   $('li a[href="'+ 'index.php?' + urlClass +'"]').closest('ul').addClass('menu-open');
 
